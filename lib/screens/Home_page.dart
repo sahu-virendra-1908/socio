@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/Add_on_button.dart';
 import 'package:flutter_application_1/screens/Add_pusing.dart';
+import 'package:flutter_application_1/screens/metamsk.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 
@@ -62,6 +63,10 @@ class _HomePageState extends State<HomePage> {
                     MaterialPageRoute(builder: (context) => ToggleChatForm()));
               } else if (value == 'Contact') {
                 // Do something when Contact is selected
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => MetaMaskLauncher()));
               }
             },
             itemBuilder: (BuildContext context) {
